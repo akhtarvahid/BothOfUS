@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>BothOfUs</title>
+  <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/modern-education-3/128/118-512.png" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-controller="myCtrl">
+
+
+
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#/">Find Your Book here</a>
+      </div>
+    </div>
+</nav>
+
+
+  <div align="center" style="margin-bottom: 40px" class="form-group"><br>
+      <label style="font-size: 30px;color: white;">Search here</label><br>  
+      <input type="text" class="form-control" ng-model="search" placeholder="Enter book name...">
+      <button class="btn btn-primary" ng-click="searchIt()">Search</button>
+  </div>
+
+ <div class="container">
+  <div class="row">
+  <div class="list-group" ng-repeat="book in booklist track by $index">
+    <div href="#" class="list-group-item" class="listitem" ng-click="openItem(book)">
+      <a href="#"><h3 class="list-group-item-heading">{{book}}</h3></a>              
+    </div>
+  </div> 
+  </div>
+ </div>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+ <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

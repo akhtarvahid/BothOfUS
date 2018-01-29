@@ -1,0 +1,33 @@
+body {
+  /*Image Credit: Books HD by Abhi Sharma, on Flickr*/
+  background: url(https://c1.staticflickr.com/9/8078/8314929977_4d7e817d68_h.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.navbar-brand{
+  background-color: red;
+  font-size: 25px;
+}
+.list-group {
+    padding-left: 0;
+    margin-bottom: 10px;
+}
+.form-control{
+  width: 25%;
+}
+.listitem{
+  word-wrap: break-word;
+  cursor: pointer;
+}
+.btn{
+  margin-top: 5px;
+}
+input[type="text"]{
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Arial;
+  font-style: bold;
+}
